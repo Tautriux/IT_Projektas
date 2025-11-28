@@ -1,0 +1,341 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.menu {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand  {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.brand:hover {
+  background-color: #374151;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav a:hover {
+  background-color: #374151;
+  color: white;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions a {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.actions .login {
+  color: white;
+  border: 1px solid #9ca3af;
+}
+
+.actions .login:hover {
+  background-color: #374151;
+}
+
+.actions .register {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.actions .register:hover {
+  background-color: #2563eb;
+}
+
+.content {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
+}
+
+
+.inputform {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input label {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.input input {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+.remove-button {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+.add-button {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  background-color: #22c55e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-button:hover {
+  background-color: #16a34a;
+}
+
+.input select {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.input select option {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.inputform a.submit-button {
+  text-align: center;
+  text-decoration: none;
+}
+
+.error-message {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  color: #dc2626;
+  font-weight: 600;
+  background-color: #fee2e2;
+  border: 1px solid #dc2626;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message-page {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  color: #16a34a;
+  font-weight: 600;
+  background-color: #b8ffd2;
+  border: 1px solid #16a34a;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.work-hours {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-btn {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.work-hours .input {
+  flex: 1;
+}
+
+.text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.weekday {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.add-btn:hover {
+  background-color: #16a34a;
+}
+
+.no-values {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1f2937;
+  text-align: center;
+}
+
+.comment {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1f2937;
+  padding-top: 20px;
+}
+
+
+table {
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background-color: #fff;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #d1d5db;
+}
+
+th {
+  font-weight: 600;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+td {
+  color: #374151;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+.input textarea {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
